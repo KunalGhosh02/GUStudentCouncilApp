@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:gusc/pages/auth/forgot_password.dart';
+import 'package:gusc/pages/auth/register.dart';
 import 'package:gusc/pages/auth/sign_up_email.dart';
 import 'package:gusc/pages/auth/user.dart';
 import 'package:gusc/pages/settings.dart';
@@ -20,6 +22,8 @@ class MyApp extends StatelessWidget {
         routes: {
           '/settings': (context) => Settings(),
           '/signup': (context) => SignUp(),
+          '/register': (context) => RegisterUser(),
+          '/forgot_password': (context) => ForgotPassword(),
         },
       ),
     );
