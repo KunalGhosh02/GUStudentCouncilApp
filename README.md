@@ -13,6 +13,7 @@ If you use SSH:
 If you use HTTPS:
 
 >git clone <https://github.com/technojam/GUStudentCouncilApp.git> && cd GUStudentCouncilApp
+
 >flutter run -d \<deviceID>
 
 ## How to contribute  
@@ -25,6 +26,6 @@ If you use HTTPS:
 
 ### Learn more about Flutter and Dart on [flutter.dev](https://flutter.dev/) and [dart.dev](https://dart.dev/)
 
-[This app requires a firebase config to work.]
+[This app requires a firebase config to work. [Firebase docs.](https://firebase.google.com/docs)]
 
 [Only tested and built to work on android.]
