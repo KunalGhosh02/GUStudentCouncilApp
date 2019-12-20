@@ -4,7 +4,7 @@ An app for managing all activities and flows within GU Student Council built wit
 
 ## Build instructions
 
-Make sure you have Flutter SDK installed
+__Make sure you have Flutter SDK installed__
 
 If you use SSH:
 
@@ -14,7 +14,13 @@ If you use HTTPS:
 
 >git clone <https://github.com/technojam/GUStudentCouncilApp.git> && cd GUStudentCouncilApp
 
+If you have multiple devices:
+
 >flutter run -d \<deviceID>
+
+If you have single device connected:
+
+>flutter run
 
 ## How to contribute  
 
@@ -24,8 +30,16 @@ If you use HTTPS:
 - Make your fixes and git push.
 - Make a pull request and refer it in a comment in the issue you were working on.
 
+## Join our slack channel for further communication
+
+Link: <http://tj-connect.herokuapp.com/>  
+
+Relevant channel: #student-council-android
+
 ### Learn more about Flutter and Dart on [flutter.dev](https://flutter.dev/) and [dart.dev](https://dart.dev/)
 
-[This app requires a firebase config to work. [Firebase docs.](https://firebase.google.com/docs)]
+[This app requires a firebase config to work. [Firebase docs.](https://firebase.google.com/docs)
+
+Will be removed. Relevant Issue: #4 ]
 
 [Only tested and built to work on android.]
