@@ -40,6 +40,6 @@ Relevant channel: #student-council-android
 
 [This app requires a firebase config to work. [Firebase docs.](https://firebase.google.com/docs)
 
-Will be removed. Relevant Issue: #4 ]
+Will be removed. Relevant Issue: [#4](https://github.com/technojam/GUStudentCouncilApp/issues/4) ]
 
 [Only tested and built to work on android.]
