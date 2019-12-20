@@ -3,7 +3,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:gusc/pages/animation/fade_route_builder.dart';
 import 'package:gusc/pages/auth/register.dart';
-import 'package:gusc/services/auth.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:rect_getter/rect_getter.dart';
 
@@ -13,7 +13,7 @@ class SignIn extends StatefulWidget {
 }
 
 class _SignInState extends State<SignIn> {
-  final AuthService _auth = AuthService();
+  final FirebaseAuth _auth = FirebaseAuth.instance;
   final loginController = TextEditingController();
   bool _validateEmail = true;
   // bool _validatePassword = false;
@@ -235,10 +235,16 @@ class _SignInState extends State<SignIn> {
                           if (_validateEmail) {
                             print("valid");
                             try {
-                              await _auth.signInWithEmail(loginController.text,
-                                  passWordControlller.text);
+                              await _auth.signInWithEmailAndPassword(
+                                  email: loginController.text,
+                                  password: passWordControlller.text);
                             } catch (e) {
-                              print(e);
+                              showDialog(
+                                  context: context,
+                                  child: AlertDialog(
+                                    title: Text(e.code.toString()),
+                                    content: Text(e.toString()),
+                                  ));
                             }
                           }
                         },
