@@ -24,6 +24,8 @@ If you have single device connected:
 
 ## How to contribute  
 
+>**Please make your changes in development branch**
+
 - Create an issue and ask for it to be assigned to you.
 - (Please don't work on an issue without any comments organization might be working on it.)
 - Fork this repo.
